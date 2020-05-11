@@ -16,17 +16,31 @@
 
 	<modules>
 		<module>eureka</module>
+		<module>common</module>
 	</modules>
 
 	<properties>
 		<!--当前项目的版本号管理-->
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR4</spring-cloud.version>
-
+		<jackson.version>2.9.1</jackson.version>
+		<lombok.version>1.18.10</lombok.version>
 	</properties>
 
 	<dependencies>
+		<!--jackson依赖-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
 
+		<!--lombok依赖-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
