@@ -16,11 +16,19 @@
 
 	<modules>
 		<module>eureka</module>
+		<module>gateway</module>
+		<module>admin</module>
+		<module>config</module>
 		<module>common</module>
+		<module>order</module>
+		<module>product</module>
 	</modules>
 
 	<properties>
 		<!--当前项目的版本号管理-->
+		<common.version>0.0.1-SNAPSHOT</common.version>
+		<order.version>0.0.1-SNAPSHOT</order.version>
+		<product.version>0.0.1-SNAPSHOT</product.version>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR4</spring-cloud.version>
 		<jackson.version>2.9.1</jackson.version>
